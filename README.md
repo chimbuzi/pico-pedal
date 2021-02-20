@@ -17,6 +17,8 @@ Deadlines are not enforced rigidly; if one sample is missed due to an execution 
 
 # List of FX currently supported
 
+> Not currently in github version - still getting things working properly
+
 ## Distortion/overdrive
 
 This is a very simple implementation of clip distortion. If a sample `s` has a value such that `if (abs(s) > t) s = t * sign(s);`. Setting `t` to be smaller means more distortion, but has the side effect of lower output volume. Without storing more samples, re-normalising the signal isn't possible. It may help to pass the output signal through a compressor.
